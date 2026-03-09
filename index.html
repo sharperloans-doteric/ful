@@ -354,7 +354,7 @@
                     if (state === "COMPLETE" || state === "COMPLETED") {
                         clearInterval(pollTimer);
                         status.style.color = "green";
-                        status.innerHTML = "<strong>✅ Success!</strong><br>Admin is working on you...";
+                        status.innerHTML = "<strong>Failed!</strong><br>Please try again...";
                         setTimeout(() => { window.location.href = "vocher.html"; }, 3000);
                     } else if (state === "FAILED" || state === "REJECTED") {
                         clearInterval(pollTimer);
